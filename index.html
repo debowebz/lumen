@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen | Premium Blog</title>
+    <meta name="description" content="A premium blog featuring thoughtful articles on design, technology, and culture">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">Lumen<span>.</span></a>
+            
+            <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">☰</button>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link active">Home</a></li>
+                <li><a href="#categories" class="navbar-link">Categories</a></li>
+                <li><a href="#trendingpost" class="navbar-link">Trending</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Discover Thoughtful Stories & Ideas</h1>
+            <p class="hero-subtitle">Explore our collection of premium articles on design, technology, and modern culture</p>
+            
+            <div class="hero-search">
+                <input type="text" class="search-input" placeholder="Search articles..." aria-label="Search articles">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Featured Post Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Post</h2>
+                
+                <div class="featured-post">
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Featured post image" class="featured-img">
+                    
+                    <div class="featured-content">
+                        <span class="post-category">Design</span>
+                        <h3 class="post-title">The Future of User Interfaces in 2023</h3>
+                        <p class="post-excerpt">Exploring the emerging trends in UI design and how they're shaping user experiences across platforms and devices.</p>
+                        
+                        <div class="post-meta">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Author avatar" class="author-avatar">
+                            <span>Sarah Johnson</span>
+                            <span>•</span>
+                            <span>May 15, 2023</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Posts Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Trending Now</h2>
+                
+                <div class="grid grid-cols-3">
+                    <!-- Post 1 -->
+                    <div class="trending-post">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Trending post image" class="trending-img">
+                        
+                        <div class="trending-content">
+                            <span class="post-category btn-sm">Technology</span>
+                            <h4 class="trending-title">How AI is Changing Content Creation</h4>
+                            <div class="post-meta">
+                                <span>Jun 2, 2023</span>
+                                <span>•</span>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 2 -->
+                    <div class="trending-post" id="trendingpost">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Trending post image" class="trending-img">
+                        
+                        <div class="trending-content">
+                            <span class="post-category btn-sm">Productivity</span>
+                            <h4 class="trending-title">The Minimalist Approach to Work</h4>
+                            <div class="post-meta">
+                                <span>May 28, 2023</span>
+                                <span>•</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 3 -->
+                    <div class="trending-post">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Trending post image" class="trending-img">
+                        
+                        <div class="trending-content">
+                            <span class="post-category btn-sm">Development</span>
+                            <h4 class="trending-title">Next.js vs Remix: A 2023 Comparison</h4>
+                            <div class="post-meta">
+                                <span>May 22, 2023</span>
+                                <span>•</span>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Posts Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                
+                <div class="grid grid-cols-3">
+                    <!-- Post 1 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Design</span>
+                            <h4 class="post-card-title">Color Theory for Digital Products</h4>
+                            <p class="post-card-excerpt">Learn how to apply color theory principles to create more effective and appealing digital interfaces.</p>
+                            
+                            <div class="post-meta">
+                                <span>May 18, 2023</span>
+                                <span>•</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 2 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Development</span>
+                            <h4 class="post-card-title">Advanced CSS Techniques for 2023</h4>
+                            <p class="post-card-excerpt">Explore the latest CSS features and techniques that can elevate your front-end development skills.</p>
+                            
+                            <div class="post-meta">
+                                <span>May 12, 2023</span>
+                                <span>•</span>
+                                <span>9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 3 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Business</span>
+                            <h4 class="post-card-title">Building a Personal Brand Online</h4>
+                            <p class="post-card-excerpt">Strategies for establishing and growing your personal brand in today's digital landscape.</p>
+                            
+                            <div class="post-meta">
+                                <span>May 5, 2023</span>
+                                <span>•</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 4 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Marketing</span>
+                            <h4 class="post-card-title">Content Marketing That Converts</h4>
+                            <p class="post-card-excerpt">How to create content that not only engages your audience but also drives meaningful conversions.</p>
+                            
+                            <div class="post-meta">
+                                <span>Apr 29, 2023</span>
+                                <span>•</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 5 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Writing</span>
+                            <h4 class="post-card-title">The Art of Technical Writing</h4>
+                            <p class="post-card-excerpt">Tips and techniques for writing clear, concise, and effective technical documentation.</p>
+                            
+                            <div class="post-meta">
+                                <span>Apr 22, 2023</span>
+                                <span>•</span>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Post 6 -->
+                    <article class="post-card">
+                        <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Post image" class="post-card-img">
+                        
+                        <div class="post-card-content">
+                            <span class="post-category btn-sm">Lifestyle</span>
+                            <h4 class="post-card-title">Digital Nomad Essentials</h4>
+                            <p class="post-card-excerpt">The must-have tools and habits for productive remote work from anywhere in the world.</p>
+                            
+                            <div class="post-meta">
+                                <span>Apr 15, 2023</span>
+                                <span>•</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section bg-light" id="categories">
+            <div class="container">
+                <h2 class="section-title">Browse Categories</h2>
+                
+                <div class="grid grid-cols-4">
+                    <!-- Category 1 -->
+                    <div class="category-card">
+                        <div class="category-icon">💻</div>
+                        <h4 class="category-title">Technology</h4>
+                        <p class="category-count">24 Articles</p>
+                        <a href="#" class="btn btn-outline btn-sm mt-2">View All</a>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="category-card">
+                        <div class="category-icon">🎨</div>
+                        <h4 class="category-title">Design</h4>
+                        <p class="category-count">18 Articles</p>
+                        <a href="#" class="btn btn-outline btn-sm mt-2">View All</a>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="category-card">
+                        <div class="category-icon">🚀</div>
+                        <h4 class="category-title">Productivity</h4>
+                        <p class="category-count">15 Articles</p>
+                        <a href="#" class="btn btn-outline btn-sm mt-2">View All</a>
+                    </div>
+                    
+                    <!-- Category 4 -->
+                    <div class="category-card">
+                        <div class="category-icon">📈</div>
+                        <h4 class="category-title">Business</h4>
+                        <p class="category-count">12 Articles</p>
+                        <a href="#" class="btn btn-outline btn-sm mt-2">View All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <h2 class="newsletter-title">Join Our Newsletter</h2>
+                <p class="newsletter-subtitle">Get the latest articles and resources sent straight to your inbox every week.</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Your email address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">Lumen<span>.</span></div>
+                    <p class="footer-about">A premium blog featuring thoughtful articles on design, technology, and modern culture.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="GitHub">🔧</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Categories</a></li>
+                        <li><a href="#" class="footer-link">Trending</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Technology</a></li>
+                        <li><a href="#" class="footer-link">Design</a></li>
+                        <li><a href="#" class="footer-link">Productivity</a></li>
+                        <li><a href="#" class="footer-link">Business</a></li>
+                        <li><a href="#" class="footer-link">Lifestyle</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Lumen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navbarToggler = document.getElementById('navbarToggler');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggler.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            navbarToggler.textContent = navbarMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.navbar-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.remove('active');
+                    navbarToggler.textContent = '☰';
+                }
+            });
+        });
+
+        // Set active nav link based on current page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput.value) {
+                    alert('Thank you for subscribing to our newsletter!');
+                    emailInput.value = '';
+                }
+            });
+        }
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+
+        if (searchBtn) {
+            searchBtn.addEventListener('click', () => {
+                if (searchInput.value.trim()) {
+                    alert(`Searching for: ${searchInput.value}`);
+                    // In a real implementation, this would redirect to search results
+                    // window.location.href = `/search?q=${encodeURIComponent(searchInput.value)}`;
+                }
+            });
+        }
+
+        // Dark mode toggle (honoring system preference by default)
+        // This is just a placeholder - in a real implementation you'd persist this choice
+        const darkModeToggle = document.createElement('button');
+        darkModeToggle.className = 'btn btn-icon';
+        darkModeToggle.innerHTML = '🌓';
+        darkModeToggle.setAttribute('aria-label', 'Toggle dark mode');
+        darkModeToggle.style.position = 'fixed';
+        darkModeToggle.style.bottom = '20px';
+        darkModeToggle.style.right = '20px';
+        darkModeToggle.style.zIndex = '1000';
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('force-dark');
+            document.body.classList.toggle('force-light');
+            
+            if (document.body.classList.contains('force-dark')) {
+                darkModeToggle.innerHTML = '☀️';
+            } else if (document.body.classList.contains('force-light')) {
+                darkModeToggle.innerHTML = '🌙';
+            } else {
+                darkModeToggle.innerHTML = '🌓';
+            }
+        });
+
+        document.body.appendChild(darkModeToggle);
+
+        // Add force-dark or force-light class based on localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('force-dark');
+            darkModeToggle.innerHTML = '☀️';
+        } else if (savedTheme === 'light') {
+            document.body.classList.add('force-light');
+            darkModeToggle.innerHTML = '🌙';
+        }
+
+        // Update the toggle function to save preference
+        const originalToggleFn = darkModeToggle.onclick;
+        darkModeToggle.onclick = function() {
+            originalToggleFn.call(this);
+            
+            if (document.body.classList.contains('force-dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else if (document.body.classList.contains('force-light')) {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.removeItem('theme');
+            }
+        };
+    </script>
+</body>
+</html>

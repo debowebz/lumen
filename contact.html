@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Lumen</title>
+    <meta name="description" content="Get in touch with the Lumen team. We'd love to hear from you!">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-brand">Lumen<span>.</span></a>
+            
+            <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">☰</button>
+            
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="index.html" class="navbar-link">Home</a></li>
+                <li><a href="index.html" class="navbar-link">Categories</a></li>
+                <li><a href="index.html" class="navbar-link">Trending</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="contact.html" class="navbar-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container contact-hero-content">
+            <h1 class="contact-hero-title">Get In Touch</h1>
+            <p class="contact-h2ero-subtitle">We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="success-message" id="successMessage">
+                    <h3>Thank you for your message!</h3>
+                    <p>We've received your contact form and will get back to you within 24-48 hours.</p>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    
+                    <form id="contactForm">
+                        <div class="grid grid-cols-2">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" class="form-control" required aria-required="true">
+                                <div class="form-error" id="nameError">Please enter your name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" class="form-control" required aria-required="true">
+                                <div class="form-error" id="emailError">Please enter a valid email address</div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" required aria-required="true">
+                            <div class="form-error" id="subjectError">Please enter a subject</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" required aria-required="true"></textarea>
+                            <div class="form-error" id="messageError">Please enter your message</div>
+                        </div>
+                        
+                        <!-- Honeypot field for spam protection -->
+                        <div class="form-group" style="display: none;" aria-hidden="true">
+                            <label for="website">Website</label>
+                            <input type="text" id="website" name="website">
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Other Ways to Connect</h2>
+                
+                <div class="grid grid-cols-3">
+                    <!-- Email -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Email Us</h3>
+                        <p>For general inquiries and support</p>
+                        <a href="mailto:hello@lumen.example" class="btn btn-outline btn-sm mt-2">hello@lumen.example</a>
+                    </div>
+                    
+                    <!-- Office -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon">🏢</div>
+                        <h3>Visit Us</h3>
+                        <p>Our office is open Monday-Friday, 9am-5pm</p>
+                        <address class="text-sm mt-2">
+                            123 Design Street<br>
+                            Creative District<br>
+                            San Francisco, CA 94107
+                        </address>
+                    </div>
+                    
+                    <!-- Social -->
+                    <div class="contact-info-card">
+                        <div class="contact-icon">🌐</div>
+                        <h3>Follow Us</h3>
+                        <p>Connect with us on social media</p>
+                        
+                        <div class="flex gap-2 mt-3">
+                            <a href="#" class="btn btn-icon" aria-label="Twitter">🐦</a>
+                            <a href="#" class="btn btn-icon" aria-label="Instagram">📷</a>
+                            <a href="#" class="btn btn-icon" aria-label="LinkedIn">💼</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Location</h2>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.788157747534!2d-122.4199066846824!3d37.77492997975948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                            class="map-iframe" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            aria-label="Map of our location in San Francisco"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">Lumen<span>.</span></div>
+                    <p class="footer-about">A premium blog featuring thoughtful articles on design, technology, and modern culture.</p>
+                    
+                    <div class="footer-social-links">
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="GitHub">🔧</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Categories</a></li>
+                        <li><a href="#" class="footer-link">Trending</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link">Technology</a></li>
+                        <li><a href="#" class="footer-link">Design</a></li>
+                        <li><a href="#" class="footer-link">Productivity</a></li>
+                        <li><a href="#" class="footer-link">Business</a></li>
+                        <li><a href="#" class="footer-link">Lifestyle</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Lumen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navbarToggler = document.getElementById('navbarToggler');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggler.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+            navbarToggler.textContent = navbarMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('.navbar-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.remove('active');
+                    navbarToggler.textContent = '☰';
+                }
+            });
+        });
+
+        // Set active nav link based on current page
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            if (linkHref === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+
+        // Dark mode toggle (honoring system preference by default)
+        const darkModeToggle = document.createElement('button');
+        darkModeToggle.className = 'btn btn-icon';
+        darkModeToggle.innerHTML = '🌓';
+        darkModeToggle.setAttribute('aria-label', 'Toggle dark mode');
+        darkModeToggle.style.position = 'fixed';
+        darkModeToggle.style.bottom = '20px';
+        darkModeToggle.style.right = '20px';
+        darkModeToggle.style.zIndex = '1000';
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('force-dark');
+            document.body.classList.toggle('force-light');
+            
+            if (document.body.classList.contains('force-dark')) {
+                darkModeToggle.innerHTML = '☀️';
+            } else if (document.body.classList.contains('force-light')) {
+                darkModeToggle.innerHTML = '🌙';
+            } else {
+                darkModeToggle.innerHTML = '🌓';
+            }
+        });
+
+        document.body.appendChild(darkModeToggle);
+
+        // Add force-dark or force-light class based on localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            document.body.classList.add('force-dark');
+            darkModeToggle.innerHTML = '☀️';
+        } else if (savedTheme === 'light') {
+            document.body.classList.add('force-light');
+            darkModeToggle.innerHTML = '🌙';
+        }
+
+        // Update the toggle function to save preference
+        darkModeToggle.onclick = function() {
+            if (document.body.classList.contains('force-dark')) {
+                document.body.classList.remove('force-dark');
+                document.body.classList.add('force-light');
+                darkModeToggle.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else if (document.body.classList.contains('force-light')) {
+                document.body.classList.remove('force-light');
+                darkModeToggle.innerHTML = '🌓';
+                localStorage.removeItem('theme');
+            } else {
+                document.body.classList.add('force-dark');
+                darkModeToggle.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        };
+
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Reset errors
+                document.querySelectorAll('.form-error').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.form-control').forEach(el => {
+                    el.classList.remove('error');
+                });
+                
+                // Validate fields
+                let isValid = true;
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+                const subject = document.getElementById('subject');
+                const message = document.getElementById('message');
+                
+                if (!name.value.trim()) {
+                    document.getElementById('nameError').style.display = 'block';
+                    name.classList.add('error');
+                    isValid = false;
+                }
+                
+                if (!email.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                    document.getElementById('emailError').style.display = 'block';
+                    email.classList.add('error');
+                    isValid = false;
+                }
+                
+                if (!subject.value.trim()) {
+                    document.getElementById('subjectError').style.display = 'block';
+                    subject.classList.add('error');
+                    isValid = false;
+                }
+                
+                if (!message.value.trim()) {
+                    document.getElementById('messageError').style.display = 'block';
+                    message.classList.add('error');
+                    isValid = false;
+                }
+                
+                // Check honeypot field
+                const website = document.getElementById('website');
+                if (website.value.trim()) {
+                    // Likely a bot, don't proceed
+                    return false;
+                }
+                
+                if (isValid) {
+                    // In a real implementation, you would send the form data to a server here
+                    // For this demo, we'll just show the success message
+                    contactForm.reset();
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        }
+
+        // Rate limiting - prevent multiple rapid submissions
+        let lastSubmissionTime = 0;
+        contactForm.addEventListener('submit', function() {
+            const now = Date.now();
+            if (now - lastSubmissionTime < 5000) { // 5 second cooldown
+                alert('Please wait a few seconds before submitting another message.');
+                return false;
+            }
+            lastSubmissionTime = now;
+        });
+    </script>
+</body>
+</html>
